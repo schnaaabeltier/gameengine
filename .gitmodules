@@ -4,3 +4,6 @@
 [submodule "lib/glbinding"]
 	path = lib/glbinding
 	url = https://github.com/cginternals/glbinding.git
+[submodule "lib/cpplocate"]
+	path = lib/cpplocate
+	url = https://github.com/cginternals/cpplocate.git
