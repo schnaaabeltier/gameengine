@@ -5,13 +5,10 @@
 
 #include "GLFW/glfw3.h"
 
-void destroyGlfwWindow(GLFWwindow *window) {
-    glfwDestroyWindow(window);
-}
 
 class Application {
 public:
-    Application(std::string name, unsigned int width, unsigned int height);
+    Application(std::string name, int width, int height);
     ~Application();
     void run();
 
@@ -19,8 +16,8 @@ protected:
     void createWindow();
 
     std::string name;
-    unsigned int width;
-    unsigned int height;
+    int width;
+    int height;
 
-    std::unique_ptr<GLFWwindow, void(*)(GLFWwindow*)> window;
+    std::unique_ptr<GLFWwindow, std::function<void(GLFWwindow*)>> window;
 };
