@@ -1,0 +1,6 @@
+[submodule "lib/globjects"]
+	path = lib/globjects
+	url = https://github.com/cginternals/globjects.git
+[submodule "lib/glbinding"]
+	path = lib/glbinding
+	url = https://github.com/cginternals/glbinding.git
